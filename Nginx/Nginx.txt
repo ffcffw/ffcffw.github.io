@@ -1,0 +1,6 @@
+location /{
+	rewrite ^/vod(.*)$ /play.php?play=$1;
+	rewrite ^/bplay/(.*).html$ /bplay.php?play=$1;
+    rewrite ^/wap/vod(.*)$ /wap/play.php?play=$1;
+	rewrite ^/wap/bplay/(.*).html$ /wap/bplay.php?play=$1;
+}

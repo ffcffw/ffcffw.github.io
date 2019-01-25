@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^vod(.*)$ play.php\?play=$1
+RewriteRule ^bplay/(.*).html$ bplay.php\?play=$1
+RewriteRule ^wap/vod(.*)$ wap/play.php\?play=$1
+RewriteRule ^wap/bplay/(.*).html$ wap/bplay.php\?play=$1
+RewriteRule ^zhibo.html$ zhibo.php
